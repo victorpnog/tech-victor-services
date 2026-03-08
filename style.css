@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #111;
+    background: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 68px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    margin-left: 28px;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+.hero {
+    background: #e5e5e5;
+    padding: 72px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+.btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+
+.quem-somos {
+    background: #fff;
+    padding: 64px 0;
+}
+
+.quem-somos p {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.diferenciais {
+    background: #F9FAFB;
+    padding: 48px 0 64px;
+    text-align: center;
+}
+
+.diferenciais h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.hero-servicos {
+    background: #e5e5e5;
+    padding: 56px 0;
+    text-align: center;
+}
+
+.hero-servicos h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-servicos p {
+    font-size: 16px;
+    color: #555;
+}
+
+.servicos-lista {
+    background: #fff;
+    padding: 56px 0 72px;
+    text-align: center;
+}
+
+.servicos-lista h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.cards-2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 28px 20px;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+footer {
+    background: #1a1a2e;
+    padding: 32px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #fff;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .cards,
+    .cards-2col {
+        grid-template-columns: 1fr;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 0;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .quem-somos p {
+        font-size: 20px;
+    }
+}
